@@ -1,0 +1,20 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b,add,diff;
+    cout<<"Enter a number"<<endl;
+    cin>>a;
+     cout<<"Enter a number"<<endl;
+    cin>>b;
+    int*p1;
+    int *p2;
+    p1=&a;
+    p2=&b;
+    
+    diff=*p1-*p2;
+    cout<<"Difference: "<<diff;
+    cout<<""<<endl;
+    add=*p1+*p2;
+    cout<<"Addition: "<<add;
+}
