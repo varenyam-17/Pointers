@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int l;
+    cout<<"Enter size of array "<<endl;
+    cin>>l;
+    int arr[l];
+    for(int i=0;i<l;i++)
+    {
+        cout<<"Enter the element "<<"["<<i+1<<"]"<<endl;
+        cin>>arr[i];
+    }
+    int *ptr=&arr[l];
+    cout<<"Reversal~>"<<endl;
+    for(int i=0;i<l;i++)
+    {
+        ptr--;
+        
+        cout<<*ptr;
+        cout<<""<<endl;
+    }
+}
