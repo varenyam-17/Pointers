@@ -1,0 +1,37 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int i=12;
+    float f=67.56;
+    double d=0.766;
+    bool b=1;
+    int*ip;
+    float*fp;
+    double*dp;
+    bool*bp;
+    ip=&i;
+    fp=&f;
+    dp=&d;
+    bp=&b;
+    cout<<"Integer: "<<*ip<<" Integer Address: "<<ip;
+    cout<<""<<endl;
+    ip++;
+    cout<<"Integer after Increment: "<<*ip<<" Integer Address: "<<ip;
+    cout<<""<<endl;
+    cout<<"Float: "<<*fp<<" Float Address: "<<fp;
+    cout<<""<<endl;
+    fp++;
+    cout<<"Integer after Increment: "<<*fp<<" Integer Address: "<<fp;
+    cout<<""<<endl;
+    cout<<"Double: "<<*dp<<" Double Address: "<<dp;
+    cout<<""<<endl;
+    dp++;
+    cout<<"Double after Increment: "<<*dp<<" Double Address: "<<dp;
+    cout<<""<<endl;
+    cout<<"Boolean: "<<*bp<<" Boolean Address: "<<bp;
+    cout<<""<<endl;
+    bp++;
+    cout<<"Boolean after Increment: "<<*bp<<" Boolean Address: "<<bp;
+    cout<<""<<endl;
+}
